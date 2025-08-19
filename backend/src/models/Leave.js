@@ -8,7 +8,7 @@ const leaveSchema = new mongoose.Schema(
     reason: { type: String },
     status: { type: String, enum: ['Pending', 'Approved', 'Rejected'], default: 'Pending' }
   },
-  { timestamps: true }
+  // { timestamps: true }
 );
 
 export default mongoose.model('Leave', leaveSchema);
