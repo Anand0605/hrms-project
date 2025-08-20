@@ -1,0 +1,16 @@
+# Ignore dependencies (host ke node_modules ko container me mat lo)
+node_modules
+npm-debug.log
+yarn-error.log
+
+# Environment files
+.env
+
+# Git & Docker files
+.git
+.gitignore
+Dockerfile
+docker-compose.yml
+
+# OS/system files
+.DS_Store
