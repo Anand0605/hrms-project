@@ -1,4 +1,3 @@
-// src/controllers/upload.controller.js
 import path from 'path';
 import fs from 'fs';
 
@@ -9,7 +8,6 @@ export const uploadFile = (req, res) => {
       return res.status(400).json({ message: 'No file uploaded' });
     }
 
-    // Optional: save file info somewhere
     const file = req.file;
     const filePath = path.join('uploads', file.originalname);
 
