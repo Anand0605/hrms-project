@@ -16,7 +16,7 @@ app.use(cors({ origin: process.env.CLIENT_URL || '*', credentials: true }));
 app.use(express.json({ limit: '5mb' }));
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
-app.use(morgan('dev'));
+// app.use(morgan('dev'));
 
 app.get('/', (_req, res) => res.json({ status: 'ok', service: 'hrms-api' }));
 
